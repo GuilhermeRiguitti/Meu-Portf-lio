@@ -1,0 +1,169 @@
+@keyframes animProjetos {
+    from {
+        background-color: #b8b8be;
+        width: 200px;
+        height: 200px;
+    }
+    to {
+        background-color: #b8b8be;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.divtopnav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #6a7896;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+  }
+
+.navegacao {
+    display: flex;
+    align-items: center;
+} 
+
+.logo {
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.link {
+    margin: 0 15px 0 0;
+    font-size: small;
+    color: #ffffff;
+    font-family:  sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.divHome{
+    position: relative;
+    width: 100%;
+}
+
+.imgHome {
+    width: 100%; 
+}
+
+.textoPrincipal {
+    position: absolute; 
+    left: 0;
+    right: 0;
+    bottom: 60%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.divPerfil {
+    display: flex;
+    position: absolute;
+    
+    padding: auto;
+    bottom: 6%; 
+    justify-content: center;
+    
+}
+
+.imgPerfil {
+    width: 7%;
+    margin: 1.5% ;
+}
+
+.textoPerfil {
+    text-align: end;
+    font-size: 1vw;
+    width: 30%;  
+    margin: 2% 0 0 0;    
+}
+
+.divisor {
+    height: 50vw;
+    margin: 1% 6% 0 6%;
+    max-height: 11vw;
+}
+
+.textoSkills {  
+    text-align: start;
+    font-size: 1vw;
+    width: 30%;  
+    margin: 2% 0 0 0;  
+}
+
+.divProjetos {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-items: end;
+    padding: 10%;
+}
+
+
+.imgProjeto1 {
+    position: absolute;
+    width: 15%;
+    margin: 0 0 0 0;
+    left: 7%;
+    
+    
+    
+}
+
+.textoProjeto1 {
+    position: absolute;
+    text-align: end;
+    font-size: 1vw;
+    width: 30%;
+    margin: 0 0 0 0;
+    right: 10%;
+}
+   
+.quadrado {
+    margin: 10%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #b8b8be;
+    transition: all 3s ease-in;
+    animation: animProjetos 3s infinite;
+}
+
+main{
+    width: 80%;
+    display: table;
+    height: 800px;
+    background-color: #b8b8be;
+    margin: 100px auto;
+
+}
+
+.divFooter {
+    display: flex;
+    flex: column;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6a7896;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+  }
+
+.linkfooter{
+    display: flex;
+    
+    
+}
+.iconesFooter{
+    position: absolute;
+    width: 50%;
+}
