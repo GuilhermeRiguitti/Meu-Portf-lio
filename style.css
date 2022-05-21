@@ -12,28 +12,30 @@
 }
 
 body{
+    background-image: url("imagens/background.jpg");
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    background-size: 100%;
+    
 }
 
-.divtopnav {
-    display: flex;
-    justify-content: space-between;
+.navBar {
+    display: grid;
+    grid-template-columns: 5% 69% 8% 8% 8%;
     background-color: #6a7896;
-    overflow: hidden;
     width: 100%;
-    height: 50px;
+    height: max-content;
     padding: 5px;
+    justify-items: end;
+    align-items: center;
+    position: fixed;
   }
 
-.navegacao {
-    display: flex;
-    align-items: center;
-} 
+
 
 .logo {
-    max-width: 100%;
-    max-height: 90%;
+    max-width: 80%;
 }
 
 .link {
@@ -44,59 +46,70 @@ body{
     text-decoration: none;
     font-weight: bolder;
 }
+
 .divHome{
-    position: relative;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 2fr 0.5fr 0.3fr 2.3fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
     width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-items: center;
 }
 
-.imgHome {
-    width: 100%; 
+.item1{
+    width: 20%;;
+    height: 101%;
+    border-radius: 220px;
+    grid-row: 2;
+    grid-column: 2;  
 }
 
-.textoPrincipal {
-    position: absolute; 
-    left: 0;
-    right: 0;
-    bottom: 60%;
-    color: #ffffff;
-    text-align: center;
+.item2{
+    grid-row: 3;
+    grid-column: 2;  
+}
+.item3{
+    grid-row: 4;
+    grid-column: 2;  
 }
 
-.divPerfil {
-    display: flex;
-    position: absolute;
+.perfilProssional{
+   
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
     
-    padding: auto;
-    bottom: 6%; 
-    justify-content: center;
-    
 }
 
-.imgPerfil {
-    width: 7%;
-    margin: 1.5% ;
+.itemImg1Perfil {
+    width: 70%;
+    margin: 10px ;
 }
 
-.textoPerfil {
+.itemTexto1Perfil {
     text-align: end;
-    font-size: 1vw;
-    width: 30%;  
-    margin: 2% 0 0 0;    
+    width: 90%;
+       
 }
 
-.divisor {
-    height: 50vw;
-    margin: 1% 6% 0 6%;
-    max-height: 11vw;
+.itemLinhaPerfil {
+    height: 70%;
 }
 
-.textoSkills {  
+.itemTexto2Perfil {  
     text-align: start;
-    font-size: 1vw;
-    width: 30%;  
-    margin: 2% 0 0 0;  
+    width: 90%;  
+    
 }
 
+.itemImg2Perfil {
+    width: 70%;
+    margin: 10px ;
+
+}
 .divProjetos {
     display: flex;
     position: relative;
@@ -104,6 +117,7 @@ body{
     justify-items: end;
     padding: 10%;
 }
+
 
 
 .imgProjeto1 {
@@ -145,25 +159,24 @@ main{
 }
 
 .divFooter {
-    display: flex;
-    flex: column;
-    position: relative;
-    left: 0;
-    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.1fr 2fr 2fr 2fr 2fr 0.1fr 3fr 1fr;
     width: 100%;
+    height: 20vh;
     background-color: #6a7896;
     color: white;
-    text-align: center;
-    justify-content: center;
-    padding: 50px;
+    justify-items: center;
+    align-items: center;
+  
   }
 
-.linkfooter{
-    display: flex;
-    
-    
-}
-.iconesFooter{
-    position: absolute;
+.imgFooter{
     width: 50%;
+}
+.lineFooter{
+    height: 15vh;
+ 
+}
+.textFooter{
+ 
 }
