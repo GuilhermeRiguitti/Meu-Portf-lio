@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="js/jquery.js"></script>
         <title>Guilherme Riguiti</title>
     </head>
 <body class="body">
@@ -13,29 +14,35 @@
             <a href="file:///E:/area%20de%20trabalho2/Portifolio/index.html">
                 <img class="logo" src="imagens/logo.png" >
             </a>
-            <a class="link" href="index.html">HOME</a>
-            <a class="link" href="#contact">SERVIÇOS</a>
-            <a class="link" href="#about">PROJETOS</a>
-            <a class="link" href="#about">CONTATOS</a>
+            <a id="1" class="link" href="index.html">HOME</a>
+            <a id="1" class="link" href="#contact">SERVIÇOS</a>
+            <a id="1" class="link" href="#about">PROJETOS</a>
+            <a id="1" class="link" href="#about">CONTATOS</a>
         </div>
         <div class="divHome">
-            <img class="item1" src="imagens/fotoperfil.JPG">
+            <img class="item1" src="imagens/perfil-circle.png">
             <h1 class="item2">Guilherme Riguiti de Oliveira</h1>
             <h3 class="item3">Web Júnior Developer</h3>
             
         </div>  
-        <div class="perfilProssional">
+        <div id="3" class="perfilProssional">
                 <img class="itemImg1Perfil" src="imagens/perfil.png">
-                <p class="itemTexto1Perfil">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna<br> aliqua.
-                     Ut enim ad minim veniam, quis<br> nostrud exercitation ullamco 
-                     laboris nisi ut aliquip ex ea commodo
-                </p>  
+                <span>
+                    <h5 class="itemTexto1Perfil">HardSkills</h5>
+                    <p class="itemTexto1Perfil">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna<br> aliqua.
+                        Ut enim ad minim veniam, quis<br> nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo <br>
+                    </p>  
+                </span>
                 <img class="itemLinhaPerfil" src="imagens/Line.png" >
-                <p class="itemTexto2Perfil">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna <br>aliqua. Ut enim ad minim veniam, quis<br> nostrud exercitation ullamco 
-                    laboris nisi <br>ut aliquip ex ea commodo
-               </p> 
+                <span>
+                    <h5 class="itemTexto2Perfil">SoftSkills</h5>
+                    <p class="itemTexto2Perfil">Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna <br>aliqua. Ut enim ad minim veniam, quis<br> nostrud exercitation ullamco 
+                        laboris nisi <br>ut aliquip ex ea commodo
+                </p> 
+                </span>
                <img class="itemImg2Perfil" src="imagens/skills.png">
         </div>
         <div class="divProjetos">
@@ -71,7 +78,50 @@
                       
                
         </div>
+    <script>
+        function posicaoMouse(event) {
+            $('#3').html(`x: ${event.clientX} y: ${event.clientY}`)
+        }
+
+        $('a').mouseover(event => {
+            $('a').alteraTamanho()
+        })
+
+        $('a').mouseleave(event => {
+            $('a').voltaTamanho()
+        })
+
+        $('#3').mouseover(event => {
+            $('#3').alteraSombra()
+        })
+
+        $('#3').mouseleave(event => {
+            $('#3').voltaSombra()
+        })
+
+        $.fn.alteraTamanho = function () {
+            this.css('font-size', 'larger')
+            return this
+        }
+
+        $.fn.voltaTamanho = function () {
+            this.css('font-size', 'small')
+            return this
+        }
+
+        $.fn.alteraSombra = function () {
+            this.css('box-shadow', '0.1em 0.1em 0.2em black')
+            return this
+        }
         
+        $.fn.voltaSombra = function () {
+            this.css('box-shadow', '0.0em 0.0em 0.0em black')
+            return this
+        }
+        
+        //$('#3').alteraTamanho().fadeOut(0).fadeIn(5000)
+    
+    </script>    
     
 </body>
 
