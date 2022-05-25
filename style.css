@@ -92,7 +92,7 @@ body{
 .perfilProssional{
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 3fr 0.1fr 3fr 1fr ;
+    grid-template-columns: 1fr 3fr 3fr 1fr ;
     justify-items: center;
     align-items: center;
     margin: auto;
@@ -108,6 +108,7 @@ body{
 .divEducacao{
     display: grid;
     grid-template-rows: 1fr 8fr;
+    border-right: 1px solid black;
 }
 
 .itemTituloPerfil {  
@@ -124,12 +125,11 @@ body{
     margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: right;
+   
        
 }
 
-.itemLinhaPerfil {
-    height: 100%;
-}
+
 
 .divQualificacao{
     display: grid;
