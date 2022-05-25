@@ -107,10 +107,7 @@ body{
 
 .divEducacao{
     display: grid;
-    grid-template-rows: 1fr 7fr;
-    
-    
-    
+    grid-template-rows: 1fr 8fr;
 }
 
 .itemTituloPerfil {  
