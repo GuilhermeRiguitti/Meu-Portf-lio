@@ -94,7 +94,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr 0.1fr 3fr 1fr ;
     justify-items: center;
-    align-items: flex-start;
+    align-items: center;
     margin: auto;
     box-shadow: 0.0em 0.0em 0.0em black;
     
@@ -107,7 +107,8 @@ body{
 
 .divEducacao{
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 7fr;
+    
     
     
 }
@@ -130,12 +131,12 @@ body{
 }
 
 .itemLinhaPerfil {
-    height: 70%;
+    height: 100%;
 }
 
 .divQualificacao{
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 7fr;
     
 }
 
