@@ -101,7 +101,7 @@ body{
 }
 
 .itemImg1Perfil {
-    width: 67%;
+    width: 70%;
     margin: 10px ;
 }
 
@@ -154,7 +154,7 @@ body{
 }
 
 .itemImg2Perfil {
-    width: 70%;
+    width: 77%;
     margin: 10px ;
 
 }
@@ -270,8 +270,9 @@ main{
  
 }
 .textFooter{
-    font-size: larger;
+    font-size: 1.75vh;
     margin: auto;
+    
     
 }
 
