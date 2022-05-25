@@ -24,7 +24,7 @@ body{
 
 .navBar {
     display: grid;
-    grid-template-columns: 69% 5% 8% 8% 8%;
+    grid-template-columns: 78% 8% 8% 8%;
     background-color: #6a7896;
     width: 100%;
     height: max-content;
@@ -75,13 +75,18 @@ body{
 .item2{
     grid-row: 3;
     grid-column: 2; 
-    text-shadow: 0.1em 0.1em 0.2em black
+    text-shadow: 0.15em 0.15em 0.25em black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 10px;
 
 }
 .item3{
     grid-row: 4;
     grid-column: 2; 
-    text-shadow: 0.1em 0.1em 0.2em black 
+    text-shadow: 0.1em 0.1em 0.2em black ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500
 }
 
 .perfilProssional{
@@ -89,7 +94,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr 0.1fr 3fr 1fr ;
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
     margin: auto;
     box-shadow: 0.0em 0.0em 0.0em black;
     
@@ -100,23 +105,54 @@ body{
     margin: 10px ;
 }
 
-.itemTexto1Perfil {
+.divEducacao{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    
+    
+}
+
+.itemTituloPerfil {  
     text-align: right;
     width: 90%;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #6a7896;
+}
 
+.itemTexto1Perfil {
+    width: 90%;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
        
 }
 
 .itemLinhaPerfil {
-    height: 90%;
+    height: 70%;
+}
+
+.divQualificacao{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    
+}
+
+.itemTitulo2Perfil {  
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #6a7896;
 }
 
 .itemTexto2Perfil {  
     text-align: left;
     width: 90%;
     margin: auto;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .itemImg2Perfil {
@@ -143,7 +179,6 @@ body{
     
     
 }
-
 .textoProjeto1 {
     position: absolute;
     text-align: end;
@@ -153,6 +188,38 @@ body{
     right: 10%;
 }
    
+.divPortifolioTitulo{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.portifolioTitulo{
+    color: #6a7896;
+    font-weight: bold;
+}
+
+.portifolioSubTitulo{
+    font-weight: bold;
+}
+
+.portifolioDesc{
+    color: #898c95;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+
 .quadrado {
     margin: 10%;
     display: block;
@@ -172,27 +239,49 @@ main{
 
 }
 
+
+
+/*footer*/
 .divFooter {
     display: grid;
-    grid-template-columns: 1fr 3fr 0.1fr 2fr 2fr 2fr 2fr 0.1fr 3fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
-    height: 20vh;
+    height: max-content;
     background-color: #6a7896;
     color: white;
     justify-items: center;
     align-items: center;
-    text-shadow: 0.1em 0.1em 0.2em black
+    text-shadow: 0.1em 0.1em 0.2em black;
+    padding: 10px;
+    
+
   
   }
 
 .imgFooter{
-    width: 50%;
+    width: 50%;  
 }
+
+.imgMail{
+    width: 35%;
+    margin: 10px;
+}
+
 .lineFooter{
-    height: 15vh;
+    height: 17vh;
  
 }
 .textFooter{
- 
+    font-size: larger;
+    margin: auto;
+    
+}
+
+.divMailCel{
+    display: grid;
+    grid-template-columns: 2fr 4.5fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
 }
 
