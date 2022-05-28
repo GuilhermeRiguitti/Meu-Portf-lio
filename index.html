@@ -96,133 +96,133 @@
             <img class="imgFooter" src="imagens/icone-github.png"/> 
         </a>  
     </div>
-
-    <script>
-        function posicaoMouse(event) {
-            $('#3').html(`x: ${event.clientX} y: ${event.clientY}`)
-        }
-
-        $('a[id="1"]').mouseover(event => {
-            $('a[id="1"]').alteraTamanho()
-        })
-
-        $('a[id="1"]').mouseleave(event => {
-            $('a[id="1"]').diminuiTamanho()
-        })
-
-        $('a[id="2"]').mouseover(event => {
-            $('a[id="2"]').alteraTamanho()
-        })
-
-        $('a[id="2"]').mouseleave(event => {
-            $('a[id="2"]').diminuiTamanho()
-        })
-        
-        $('a[id="3"]').mouseover(event => {
-            $('a[id="3"]').alteraTamanho()
-        })
-
-        $('a[id="3"]').mouseleave(event => {
-            $('a[id="3"]').diminuiTamanho()
-        })
-
-        $('a[id="4"]').mouseover(event => {
-            $('a[id="4"]').alteraTamanho()
-        })
-
-        $('a[id="4"]').mouseleave(event => {
-            $('a[id="4"]').diminuiTamanho()
-        })
-
-
-
-
-
-
-
-
-        
-        $('img[id="1"]').mouseover(event => {
-            $('img[id="1"]').alteraTamanhoFoto()
-        })
-
-        $('img[id="1"]').mouseleave(event => {
-            $('img[id="1"]').diminuiTamanhoFoto()
-        })
-
-
-
-
-        $('img[id="2"]').mouseover(event => {
-            $('img[id="2"]').alteraTamanhoFoto()
-        })
-
-        $('img[id="2"]').mouseleave(event => {
-            $('img[id="2"]').diminuiTamanhoFoto()
-        })
-
-
-
-        $('img[id="3"]').mouseover(event => {
-            $('img[id="3"]').alteraTamanhoFoto()
-        })
-
-        $('img[id="3"]').mouseleave(event => {
-            $('img[id="3"]').diminuiTamanhoFoto()
-        })
-
-
-        $('img[id="4"]').mouseover(event => {
-            $('img[id="4"]').alteraTamanhoFoto()
-        })
-
-        $('img[id="4"]').mouseleave(event => {
-            $('img[id="4"]').diminuiTamanhoFoto()
-        })
-
-        $.fn.alteraTamanho = function () {
-            this.css('font-size', '12px')
-            return this
-        }
-
-        $.fn.diminuiTamanho = function () {
-            this.css('font-size', 'small')
-            return this
-        }
-
-        $.fn.alteraTamanhoFoto = function () {
-            this.css('width', '450px')
-            this.css('height', '300')
-            this.css('opacity', '1')
-            this.css('filter', 'brightness(100%)')
-            this.css('border-radius', '5px')
-            this.css('box-shadow', '10px 10px 10px 2px #6a7896')
-            return this
-        }
-
-        $.fn.diminuiTamanhoFoto = function () {
-            this.css('width', '380px')
-            this.css('height', '200px')
-            this.css('opacity', '0.6')
-            this.css('filter', 'brightness(14%)')
-            this.css('border-radius', '9px')
-            this.css('box-shadow', '0px 0px 0px gray')
-            return this
-        }
-
-        $.fn.alteraSombra = function () {
-            this.css('box-shadow', '0.1em 0.1em 0.2em black')
-            return this
-        }
-        
-        $.fn.voltaSombra = function () {
-            this.css('box-shadow', '0.0em 0.0em 0.0em black')
-            return this
-        }
-        
-        //$('#3').alteraTamanho().fadeOut(0).fadeIn(5000)
-    
-    </script>    
-    
 </body>
+
+<script>
+    function posicaoMouse(event) {
+        $('#3').html(`x: ${event.clientX} y: ${event.clientY}`)
+    }
+
+    $('a[id="1"]').mouseover(event => {
+        $('a[id="1"]').alteraTamanho()
+    })
+
+    $('a[id="1"]').mouseleave(event => {
+        $('a[id="1"]').diminuiTamanho()
+    })
+
+    $('a[id="2"]').mouseover(event => {
+        $('a[id="2"]').alteraTamanho()
+    })
+
+    $('a[id="2"]').mouseleave(event => {
+        $('a[id="2"]').diminuiTamanho()
+    })
+    
+    $('a[id="3"]').mouseover(event => {
+        $('a[id="3"]').alteraTamanho()
+    })
+
+    $('a[id="3"]').mouseleave(event => {
+        $('a[id="3"]').diminuiTamanho()
+    })
+
+    $('a[id="4"]').mouseover(event => {
+        $('a[id="4"]').alteraTamanho()
+    })
+
+    $('a[id="4"]').mouseleave(event => {
+        $('a[id="4"]').diminuiTamanho()
+    })
+
+
+
+
+
+
+
+
+    
+    $('img[id="1"]').mouseover(event => {
+        $('img[id="1"]').alteraTamanhoFoto()
+    })
+
+    $('img[id="1"]').mouseleave(event => {
+        $('img[id="1"]').diminuiTamanhoFoto()
+    })
+
+
+
+
+    $('img[id="2"]').mouseover(event => {
+        $('img[id="2"]').alteraTamanhoFoto()
+    })
+
+    $('img[id="2"]').mouseleave(event => {
+        $('img[id="2"]').diminuiTamanhoFoto()
+    })
+
+
+
+    $('img[id="3"]').mouseover(event => {
+        $('img[id="3"]').alteraTamanhoFoto()
+    })
+
+    $('img[id="3"]').mouseleave(event => {
+        $('img[id="3"]').diminuiTamanhoFoto()
+    })
+
+
+    $('img[id="4"]').mouseover(event => {
+        $('img[id="4"]').alteraTamanhoFoto()
+    })
+
+    $('img[id="4"]').mouseleave(event => {
+        $('img[id="4"]').diminuiTamanhoFoto()
+    })
+
+    $.fn.alteraTamanho = function () {
+        this.css('font-size', '12px')
+        return this
+    }
+
+    $.fn.diminuiTamanho = function () {
+        this.css('font-size', 'small')
+        return this
+    }
+
+    $.fn.alteraTamanhoFoto = function () {
+        this.css('width', '450px')
+        this.css('height', '300')
+        this.css('opacity', '1')
+        this.css('filter', 'brightness(100%)')
+        this.css('border-radius', '5px')
+        this.css('box-shadow', '10px 10px 10px 2px #6a7896')
+        return this
+    }
+
+    $.fn.diminuiTamanhoFoto = function () {
+        this.css('width', '380px')
+        this.css('height', '200px')
+        this.css('opacity', '0.6')
+        this.css('filter', 'brightness(14%)')
+        this.css('border-radius', '9px')
+        this.css('box-shadow', '0px 0px 0px gray')
+        return this
+    }
+
+    $.fn.alteraSombra = function () {
+        this.css('box-shadow', '0.1em 0.1em 0.2em black')
+        return this
+    }
+    
+    $.fn.voltaSombra = function () {
+        this.css('box-shadow', '0.0em 0.0em 0.0em black')
+        return this
+    }
+    
+    //$('#3').alteraTamanho().fadeOut(0).fadeIn(5000)
+
+</script>
+</html>
 
