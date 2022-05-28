@@ -1,25 +1,39 @@
 @keyframes animProjetos {
     from {
-        background-color: #b8b8be;
-        width: 200px;
-        height: 200px;
+        
+        width: 600px;
+        height: 300px;
     }
     to {
-        background-color: #b8b8be;
-        width: 300px;
-        height: 300px;
+        
+        width: 700px;
+        height: 580px;
     }
 }
 
+.link:hover{ 
+    background-color: #bcbfc5; 
+    transition: 0.4s;
+    opacity: 0.8;  
+    border-radius: 5px;
+    padding: 1px;
+    color: white;
+}
+
 body{
-    
     background-image: url("imagens/background.jpg");
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    background-size: 100%;
+    background-size: 100%; 
+}
+
+.fotoProjetos {
+    width: 600px;
+    height: 300px;
     
-    
+    /*transition: all 3s ease-in;*/
+    /*animation: animProjetos 3s infinite;*/
 }
 
 .navBar {
@@ -60,11 +74,8 @@ body{
     height: max-content;
     align-items: center;
     justify-items: center;
-    color: white;
-    
+    color: white;  
 }
-
-
 
 .item1{
     width: 18%;;
@@ -79,8 +90,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin: 10px;
-
 }
+
 .item3{
     grid-row: 4;
     grid-column: 2; 
@@ -124,17 +135,12 @@ body{
     width: 90%;
     margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: right;
-   
-       
+    text-align: right;     
 }
-
-
 
 .divQualificacao{
     display: grid;
-    grid-template-rows: 1fr 7fr;
-    
+    grid-template-rows: 1fr 7fr;   
 }
 
 .itemTitulo2Perfil {  
@@ -158,34 +164,8 @@ body{
     margin: 10px ;
 
 }
-.divProjetos {
-    display: flex;
-    position: relative;
-    width: 100%;
-    justify-items: end;
-    padding: 10%;
-}
 
-
-
-.imgProjeto1 {
-    position: absolute;
-    width: 15%;
-    margin: 0 0 0 0;
-    left: 7%;
-    
-    
-    
-}
-.textoProjeto1 {
-    position: absolute;
-    text-align: end;
-    font-size: 1vw;
-    width: 30%;
-    margin: 0 0 0 0;
-    right: 10%;
-}
-   
+  
 .divPortifolioTitulo{
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
@@ -195,6 +175,7 @@ body{
     align-items: center;
     text-align: center;
 }
+
 .portifolioTitulo{
     color: #6a7896;
     font-weight: bold;
@@ -206,35 +187,34 @@ body{
 
 .portifolioDesc{
     color: #898c95;
-    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.divProjetos{
+    position: relative;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin: 50px auto;
+    height: 440px;
 
-
-
-
-
-
-
-
-.quadrado {
-    margin: 10%;
-    display: block;
-    width: 200px;
-    height: 200px;
-    background-color: #b8b8be;
-    transition: all 3s ease-in;
-    animation: animProjetos 3s infinite;
 }
 
-main{
-    width: 80%;
-    display: table;
-    height: 800px;
-    background-color: #b8b8be;
-    margin: 100px auto;
-
+.fotoProjetos {
+    width: 380px;
+    height: 200px;
+    opacity: 0.6;
+    filter: brightness(14%);
+    margin: 10px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 0px;
+    
+    /*transition: all 3s ease-in;*/
+    /*animation: animProjetos 3s infinite;*/
 }
 
 
@@ -251,10 +231,9 @@ main{
     align-items: center;
     text-shadow: 0.1em 0.1em 0.2em black;
     padding: 10px;
+    margin-top: 140px;
     
-
-  
-  }
+}
 
 .imgFooter{
     width: 50%;  
@@ -269,11 +248,10 @@ main{
     height: 17vh;
  
 }
+
 .textFooter{
     font-size: 80%;
-    margin: auto;
-    
-    
+    margin: auto;   
 }
 
 .divMailCel{

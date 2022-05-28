@@ -67,9 +67,17 @@
 
 
 
-        <main>
-            <img class="quadrado" src="../WhyZap/why-zap/imagens/icone.png">
-        </main>
+        <div class="divProjetos">
+            <img id="1" class="fotoProjetos" src="./imagens/poke-app.png"></img>
+            <img id="2" class="fotoProjetos" src="./imagens/whyzap-projeto.png"></img>
+        
+            <img id="3" class="fotoProjetos" src="./imagens/whyzap-projeto.png"></img>
+            <img id="4" class="fotoProjetos" src="./imagens/whyzap-projeto.png"></img>
+        </div>
+
+
+
+       
         <div class="divFooter" >
             <span>
                 <div class="divMailCel">
@@ -136,15 +144,80 @@
         $('a[id="4"]').mouseleave(event => {
             $('a[id="4"]').diminuiTamanho()
         })
+
+
+
+
+
+
+
+
         
+        $('img[id="1"]').mouseover(event => {
+            $('img[id="1"]').alteraTamanhoFoto()
+        })
+
+        $('img[id="1"]').mouseleave(event => {
+            $('img[id="1"]').diminuiTamanhoFoto()
+        })
+
+
+
+
+        $('img[id="2"]').mouseover(event => {
+            $('img[id="2"]').alteraTamanhoFoto()
+        })
+
+        $('img[id="2"]').mouseleave(event => {
+            $('img[id="2"]').diminuiTamanhoFoto()
+        })
+
+
+
+        $('img[id="3"]').mouseover(event => {
+            $('img[id="3"]').alteraTamanhoFoto()
+        })
+
+        $('img[id="3"]').mouseleave(event => {
+            $('img[id="3"]').diminuiTamanhoFoto()
+        })
+
+
+        $('img[id="4"]').mouseover(event => {
+            $('img[id="4"]').alteraTamanhoFoto()
+        })
+
+        $('img[id="4"]').mouseleave(event => {
+            $('img[id="4"]').diminuiTamanhoFoto()
+        })
 
         $.fn.alteraTamanho = function () {
-            this.css('font-size', '15px')
+            this.css('font-size', '12px')
             return this
         }
 
         $.fn.diminuiTamanho = function () {
             this.css('font-size', 'small')
+            return this
+        }
+
+        $.fn.alteraTamanhoFoto = function () {
+            this.css('width', '450px')
+            this.css('height', '300')
+            this.css('opacity', '1')
+            this.css('filter', 'brightness(100%)')
+            this.css('border-radius', '5px')
+            this.css('box-shadow', '10px 10px 10px 2px #6a7896')
+            return this
+        }
+
+        $.fn.diminuiTamanhoFoto = function () {
+            this.css('width', '380px')
+            this.css('height', '200px')
+            this.css('opacity', '0.6')
+            this.css('filter', 'brightness(14%)')
+            this.css('border-radius', '9px')
+            this.css('box-shadow', '0px 0px 0px gray')
             return this
         }
 
