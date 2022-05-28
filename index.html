@@ -65,10 +65,25 @@
 
 
     <div class="divProjetos">
-        <img id="1" class="fotoProjetos" src="./imagens/poke-app.png"></img>
-        <img id="3" class="fotoProjetos" src="./imagens/star-wars.png"></img>
-        <img id="2" class="fotoProjetos" src="./imagens/whyzap-projeto.png"></img>
-        <img id="4" class="fotoProjetos" src="./imagens/historico-vendas.png"></img>
+        <div id="1" class="divPokedex">
+            <h5>Poke-Dex App</h5>
+            <p> App feito utilizando o framework React que busca dados na API 
+                do Pokemon (App ainda em desenvolvimento)
+            </p>
+        </div>
+        <div id="2" class="divPokedex">
+            <h5>Star-Wars</h5> <p>
+                App feito utilizando o framework React que busca dados na API do Star-Wars
+            </p>
+        </div>
+        <div id="3" class="divPokedex">
+            <h5>Why-Zap</h5> 
+            <p>App feito utilizando o framework React simulando um chat do 
+                whatzap
+            </p>
+        </div>
+        <div id="4" class="divPokedex">Ver mais</div>
+    
     </div>
 
     <div class="divFooter" >
@@ -141,47 +156,56 @@
 
 
 
-
+//POKE-DEX
     
-    $('img[id="1"]').mouseover(event => {
-        $('img[id="1"]').alteraTamanhoFoto()
+    $('div[id="1"]').mouseover(event => {
+        $('div[id="1"]').mudarFotoPokeDex()
     })
 
-    $('img[id="1"]').mouseleave(event => {
-        $('img[id="1"]').diminuiTamanhoFoto()
-    })
-
-
-
-
-
-
-    $('img[id="2"]').mouseover(event => {
-        $('img[id="2"]').alteraTamanhoFoto()
-    })
-
-    $('img[id="2"]').mouseleave(event => {
-        $('img[id="2"]').diminuiTamanhoFoto()
+    $('div[id="1"]').mouseleave(event => {
+        $('div[id="1"]').voltarBoxPokeDex()
     })
 
 
 
-    $('img[id="3"]').mouseover(event => {
-        $('img[id="3"]').alteraTamanhoFoto()
+//STAR-WARS
+
+    $('div[id="2"]').mouseover(event => {
+        $('div[id="2"]').mudarFotoStarWars()
     })
 
-    $('img[id="3"]').mouseleave(event => {
-        $('img[id="3"]').diminuiTamanhoFoto()
+    $('div[id="2"]').mouseleave(event => {
+        $('div[id="2"]').voltarBoxStarWars()
     })
 
 
-    $('img[id="4"]').mouseover(event => {
-        $('img[id="4"]').alteraTamanhoFoto()
+
+//Why-Zap
+
+    $('div[id="3"]').mouseover(event => {
+        $('div[id="3"]').mudarFotoWhyZap()
     })
 
-    $('img[id="4"]').mouseleave(event => {
-        $('img[id="4"]').diminuiTamanhoFoto()
+    $('div[id="3"]').mouseleave(event => {
+        $('div[id="3"]').voltarBoxWhyZap()
     })
+
+
+
+//Vendas-data-base
+
+    $('div[id="4"]').mouseover(event => {
+        $('div[id="4"]').alteraTamanhoFoto()
+    })
+
+    $('div[id="4"]').mouseleave(event => {
+        $('div[id="4"]').diminuiTamanhoFoto()
+    })
+
+
+
+
+
 
     $.fn.alteraTamanho = function () {
         this.css('font-size', '12px')
@@ -193,25 +217,104 @@
         return this
     }
 
-    $.fn.alteraTamanhoFoto = function () {
+
+
+
+//Poke-Dex
+
+    $.fn.mudarFotoPokeDex = function () {
         this.css('width', '450px')
         this.css('height', '300')
         this.css('opacity', '1')
-        this.css('filter', 'brightness(90%)')
         this.css('border-radius', '5px')
-        this.css('box-shadow', '10px 10px 10px 2px #6a7896')
+        this.css('box-shadow', '10px 10px 10px 2px gray')
+        this.css('background-image', 'url(imagens/poke-dex.jpeg)')
+        this.css('background-repeat', 'no-repeat')
+        this.css('background-size', 'cover')
+        this.css('background-position', 'center')
+        this.html('')
         return this
     }
 
-    $.fn.diminuiTamanhoFoto = function () {
+    $.fn.voltarBoxPokeDex = function () {
         this.css('width', '380px')
         this.css('height', '200px')
-        this.css('opacity', '0.6')
-        this.css('filter', 'brightness(3%)')
         this.css('border-radius', '9px')
         this.css('box-shadow', '0px 0px 0px gray')
+        this.css('background-image', 'url()')
+        this.css('background-repeat', '')
+        this.css('background-size', '')
+        this.css('background-position', '')
+        this.html('<h5>Poke-Dex App</h5> <p>App feito utilizando o framework React que busca dados na API do Pokemon (App ainda em desenvolvimento)</p>')
+    
         return this
     }
+//Star-wars
+$.fn.mudarFotoStarWars = function () {
+        this.css('width', '450px')
+        this.css('height', '300')
+        this.css('opacity', '1')
+        this.css('border-radius', '5px')
+        this.css('box-shadow', '10px 10px 10px 2px gray')
+        this.css('background-image', 'url(imagens/star-wars.jpg)')
+        this.css('background-repeat', 'no-repeat')
+        this.css('background-size', 'cover')
+        this.css('background-position', 'center')
+        this.html('')
+        return this
+    }
+
+    $.fn.voltarBoxStarWars = function () {
+        this.css('width', '380px')
+        this.css('height', '200px')
+        this.css('border-radius', '9px')
+        this.css('box-shadow', '0px 0px 0px gray')
+        this.css('background-image', 'url()')
+        this.css('background-repeat', '')
+        this.css('background-size', '')
+        this.css('background-position', '')
+        this.html('<h5>Star-Wars</h5> <p>App feito utilizando o framework React que busca dados na API do Star-Wars </p>')
+    
+        return this
+    }
+
+
+    $.fn.mudarFotoWhyZap = function () {
+        this.css('width', '450px')
+        this.css('height', '300')
+        this.css('opacity', '1')
+        this.css('border-radius', '5px')
+        this.css('box-shadow', '10px 10px 10px 2px gray')
+        this.css('background-image', 'url(imagens/why-zap.jpg)')
+        this.css('background-repeat', 'no-repeat')
+        this.css('background-size', 'cover')
+        this.css('background-position', 'center')
+        this.html('')
+        return this
+    }
+
+    $.fn.voltarBoxWhyZap = function () {
+        this.css('width', '380px')
+        this.css('height', '200px')
+        this.css('border-radius', '9px')
+        this.css('box-shadow', '0px 0px 0px gray')
+        this.css('background-image', 'url()')
+        this.css('background-repeat', '')
+        this.css('background-size', '')
+        this.css('background-position', '')
+        this.html('<h5>Why-Zap</h5> <p>App feito utilizando o framework React simulando um chat do whatzap</p>')
+    
+        return this
+    }
+
+
+
+
+
+
+
+
+
 
     $.fn.alteraSombra = function () {
         this.css('box-shadow', '0.1em 0.1em 0.2em black')
