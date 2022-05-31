@@ -15,9 +15,15 @@
         <a href="index.html">
             <img class="logo" src="imagens/logo.png" >
         </a>
-        <a id="1" class="link" href="index.html">HOME</a>
-        <a id="2" class="link" href="#contact">PROJETOS</a>
-        <a id="4" class="link" href="#about">CONTATOS</a>
+        <button id="send-to-home" class="navButton">
+            <a id="1" class="link" href="#home">HOME</a>
+        </button>
+        <button  id="send-to-project" class="navButton">
+            <a id="2"  class="link" href="#contact">PROJETOS</a>
+        </button>
+        <button id="send-to-contacts" class="navButton">
+            <a id="4" class="link" href="#about">CONTATOS</a>
+        </button>
     </div>
     <div class="divHome">
         <img class="item1" src="imagens/perfil-circle.png">
@@ -114,6 +120,23 @@
 </body>
 
 <script>
+           
+    var projects = $("#send-to-project");
+    projects.click(function(){
+        $('html, body').animate({scrollTop: 1100}, 'slow')
+    });
+
+    var home = $("#send-to-home");
+    home.click(function(){
+        $('html, body').animate({scrollTop: 0}, 'slow')
+    });
+    
+    var contacts = $("#send-to-contacts");
+    contacts.click(function(){
+        $('html, body').animate({scrollTop: 3000}, 'slow')
+    });
+
+
     function posicaoMouse(event) {
         $('#3').html(`x: ${event.clientX} y: ${event.clientY}`)
     }
@@ -127,7 +150,7 @@
     })
 
     $('a[id="2"]').mouseover(event => {
-        $('a[id="2"]').alteraTamanho()
+        $('"]').alteraTamanho()
     })
 
     $('a[id="2"]').mouseleave(event => {
@@ -250,7 +273,7 @@
         return this
     }
 //Star-wars
-$.fn.mudarFotoStarWars = function () {
+    $.fn.mudarFotoStarWars = function () {
         this.css('width', '450px')
         this.css('height', '300')
         this.css('opacity', '1')
