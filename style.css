@@ -257,26 +257,28 @@ body{
 /*footer*/
 .divFooter {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 1fr 2fr 2fr 2fr;
     width: 100%;
     height: max-content;
     background-color: #6a7896;
     color: white;
     justify-items: center;
     align-items: center;
-    text-shadow: 0.1em 0.1em 0.2em black;
-    padding: 10px;
+    padding: 30px;
     margin-top: 140px;
+    
     
 }
 
 .imgFooter{
-    width: 50%;  
+    width: 40%;  
 }
 
-.imgMail{
-    width: 35%;
-    margin: 10px;
+.linkFooter{
+    display: grid;
+    grid-template-columns: 2fr;
+    justify-items: center;
+    width: 40%;
 }
 
 .lineFooter{
@@ -284,16 +286,5 @@ body{
  
 }
 
-.textFooter{
-    font-size: 80%;
-    margin: auto;   
-}
 
-.divMailCel{
-    display: grid;
-    grid-template-columns: 2fr 4.5fr 2fr 2fr;
-    justify-items: center;
-    align-items: center;
-    margin: auto;
-}
 
