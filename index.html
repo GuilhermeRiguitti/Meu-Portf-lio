@@ -12,9 +12,11 @@
 
 <body class="body">
     <div class="navBar">
-        <a href="index.html">
-            <img class="logo" src="imagens/logo.png" >
-        </a>
+        <div class="divLogo">
+            <a href="index.html">
+                <img class="logo" src="imagens/logo.png" >
+            </a>
+        </div>
         <button id="send-to-home" class="navButton">
             <a id="1" class="link" href="#home">HOME</a>
         </button>
@@ -35,7 +37,7 @@
         <img class="itemImg1Perfil" src="imagens/perfil.png">
         <span>
             <div class="divEducacao">
-                <h5 class="itemTituloPerfil">Minha Educação</h5>
+                <h5 class="itemTituloPerfil">Minha Experiência</h5>
                 <p class="itemTexto1Perfil">Experiência expansiva com 2 anos em auxílio administrativo. Cursando atualmente o curso de Análise e 
                     desenvolvimento de sistemas, com excelentes habilidades de T.I. Visionário e bem-sucedido no quesito de trabalho em equipe, 
                     simultâneo ao aperfeiçoamento de procedimentos de documentação, comunicativo, expõe ideias de maneira eficiente para resolução de problemas,
@@ -88,36 +90,38 @@
                 whatzap
             </p>
         </div>
-        <div id="4" class="divPokedex">Ver mais</div>
+        <div id="4" class="divPokedex">#Espaço para mais um projeto que ainda vou adicionar</div>
     
     </div>
 
     <div class="divFooter" >
         
+        <div class="tituloContatos">
+            <p>MEUS CONTATOS:</p>
+        </div>    
+       
+        <div class="divLinks">
+            <a class="linkFooter" href="">    
+                <img class="imgFooter"  src="imagens/email.png"alt="guilhermeriguitti1997@gmail.com" title="guilhermeriguitti1997@gmail.com"/> 
+            </a>  
+            <a class="linkFooter" href="">           
+                <img class="imgFooter" src="imagens/whatsapp.png"alt="(32)999952647"title="(32) 999952647"/>
+            </a>  
+            <a class="linkFooter" href="https://www.linkedin.com/in/guilherme-riguiti-5434b3222/">
+                <img class="imgFooter"src="imagens/linkedin.png"/> 
+            </a>   
             
-        
-        
-        <a class="linkFooter" href="">    
-            <img class="imgFooter"  src="imagens/email.png"alt="guilhermeriguitti1997@gmail.com" title="guilhermeriguitti1997@gmail.com"/> 
-        </a>  
-        <a class="linkFooter" href="">           
-            <img class="imgFooter" src="imagens/whatsapp.png"alt="(32)999952647"title="(32) 999952647"/>
-        </a>  
-        <a class="linkFooter" href="https://www.linkedin.com/in/guilherme-riguiti-5434b3222/">
-            <img class="imgFooter"src="imagens/linkedin.png"/> 
-        </a>   
-        
-        <img class="lineFooter" src="imagens/Line.png">
-        <a class="linkFooter" href="https://www.facebook.com/guilherme.riguiti/">
-            <img class="imgFooter" src="imagens/facebook.png"/> 
-        </a>
-        <a class="linkFooter" href="https://www.instagram.com/guilhermeriguitti/">
-            <img class="imgFooter" src="imagens/instagram.png"/>
-        </a> 
-        
-        <a class="linkFooter"href="https://github.com/GuilhermeRiguitti">
-            <img class="imgFooter" src="imagens/github.png"/> 
-        </a>  
+            <a class="linkFooter" href="https://www.facebook.com/guilherme.riguiti/">
+                <img class="imgFooter" src="imagens/facebook.png"/> 
+            </a>
+            <a class="linkFooter" href="https://www.instagram.com/guilhermeriguitti/">
+                <img class="imgFooter" src="imagens/instagram.png"/>
+            </a> 
+            
+            <a class="linkFooter"href="https://github.com/GuilhermeRiguitti">
+                <img class="imgFooter" src="imagens/github.png"/> 
+            </a>  
+    </div>
     </div>
 </body>
 
@@ -125,7 +129,7 @@
            
     var projects = $("#send-to-project");
     projects.click(function(){
-        $('html, body').animate({scrollTop: 1100}, 'slow')
+        $('html, body').animate({scrollTop: 1000}, 'slow')
     });
 
     var home = $("#send-to-home");
@@ -152,7 +156,7 @@
     })
 
     $('a[id="2"]').mouseover(event => {
-        $('"]').alteraTamanho()
+        $('a[id="2"]').alteraTamanho()
     })
 
     $('a[id="2"]').mouseleave(event => {
@@ -233,7 +237,7 @@
 
 
     $.fn.alteraTamanho = function () {
-        this.css('font-size', '12px')
+        this.css('font-size', '14px')
         return this
     }
 
@@ -248,8 +252,8 @@
 //Poke-Dex
 
     $.fn.mudarFotoPokeDex = function () {
-        this.css('width', '450px')
-        this.css('height', '300')
+        this.css('width', '400px')
+        this.css('height', '220')
         this.css('opacity', '1')
         this.css('border-radius', '5px')
         this.css('box-shadow', '10px 10px 10px 2px gray')
@@ -276,8 +280,8 @@
     }
 //Star-wars
     $.fn.mudarFotoStarWars = function () {
-        this.css('width', '450px')
-        this.css('height', '300')
+        this.css('width', '400px')
+        this.css('height', '220')
         this.css('opacity', '1')
         this.css('border-radius', '5px')
         this.css('box-shadow', '10px 10px 10px 2px gray')
@@ -305,8 +309,8 @@
 
 
     $.fn.mudarFotoWhyZap = function () {
-        this.css('width', '450px')
-        this.css('height', '300')
+        this.css('width', '400px')
+        this.css('height', '220px')
         this.css('opacity', '1')
         this.css('border-radius', '5px')
         this.css('box-shadow', '10px 10px 10px 2px gray')

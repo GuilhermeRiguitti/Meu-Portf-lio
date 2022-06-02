@@ -12,9 +12,8 @@
 }
 
 .link:hover{ 
-    background-color: #bcbfc5; 
-    transition: 0.4s;
-    opacity: 0.8;  
+    
+    transition: 0.1s;
     border-radius: 5px;
     padding: 1px;
     color: white;
@@ -37,16 +36,22 @@ body{
 }
 
 .navBar {
+   
     display: grid;
-    grid-template-columns: 75% 8% 8% 8%;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
     background-color: #6a7896;
     width: 100%;
     height: max-content;
     padding: 5px;
-    justify-items: start;
-    align-items: center;
+
     position: fixed;
   }
+
+.divLogo{
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+}
 
 .navButton {
     background-color: rgb(0,0,0,0);
@@ -55,17 +60,18 @@ body{
 
 .logo {
     max-width: 70%;
-    
+    padding-left: 10px;   
 }
 
 .link {
     margin: 0 15px 0 0;
     font-size: small;
     color: #ffffff;
-    font-family:  sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-weight: bolder;
-    text-shadow: 0.1em 0.1em 0.2em black
+    text-shadow: 0.1em 0.1em 0.2em black;
+    
 }
 
 .divHome{
@@ -91,7 +97,7 @@ body{
     grid-column: 2; 
     text-shadow: 0.15em 0.15em 0.25em black;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 550;
     margin: 10px;
 }
 
@@ -182,10 +188,13 @@ body{
 .portifolioTitulo{
     color: #6a7896;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+   
 }
 
 .portifolioSubTitulo{
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .portifolioDesc{
@@ -257,26 +266,48 @@ body{
 /*footer*/
 .divFooter {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 1fr 2fr 2fr 2fr;
+    
+    grid-template-rows: 2fr;
     width: 100%;
     height: max-content;
     background-color: #6a7896;
     color: white;
+    padding: 20px;
+    margin-top: 140px;  
+    padding: 30px 40px 70px 40px;
+
+}
+
+.divLinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
     justify-items: center;
     align-items: center;
-    padding: 30px;
-    margin-top: 140px;
     
+}
+.tituloContatos{
+    display: grid;
+    grid-template-columns: 6fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: 750;
+    text-shadow: 0.10em 0.10em 0.15em gray;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
+
 .imgFooter{
-    width: 40%;  
+    width: 63%;  
 }
 
 .linkFooter{
     display: grid;
-    grid-template-columns: 2fr;
+
     justify-items: center;
     width: 40%;
 }
