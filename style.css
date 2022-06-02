@@ -12,7 +12,6 @@
 }
 
 .link:hover{ 
-    
     transition: 0.1s;
     border-radius: 5px;
     padding: 1px;
@@ -30,9 +29,6 @@ body{
 .fotoProjetos {
     width: 600px;
     height: 300px;
-    
-    /*transition: all 3s ease-in;*/
-    /*animation: animProjetos 3s infinite;*/
 }
 
 .navBar {
@@ -171,7 +167,6 @@ body{
 .itemImg2Perfil {
     width: 77%;
     margin: 10px ;
-
 }
 
   
@@ -189,7 +184,6 @@ body{
     color: #6a7896;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-   
 }
 
 .portifolioSubTitulo{
@@ -202,6 +196,10 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.clicandoAqui{
+    color: #898c95
+    
+}
 .divProjetos{
     position: relative;
     width: 50%;
@@ -213,7 +211,6 @@ body{
     align-items: center;
     margin: 50px auto;
     height: max-content;
-
 }
 
 
@@ -236,26 +233,11 @@ body{
 }
 
 
-.fotoProjetos {
-    background-image: url();
-    width: 680px;
-    height: 400px;
-    opacity: 0.6;
-    filter: brightness(3%);
-    margin: 10px;
-    border-radius: 9px;
-    box-shadow: 0px 0px 0px;
-    
-    /*transition: all 3s ease-in;*/
-    /*animation: animProjetos 3s infinite;*/
-}
-
 
 
 /*footer*/
 .divFooter {
     display: grid;
-    
     grid-template-rows: 2fr;
     width: 100%;
     height: max-content;
@@ -264,7 +246,6 @@ body{
     padding: 20px;
     margin-top: 140px;  
     padding: 30px 40px 70px 40px;
-
 }
 
 .divLinks{
@@ -282,13 +263,12 @@ body{
     justify-items: center;
     align-items: center;
     margin-bottom: 35px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 750;
-    text-shadow: 0.10em 0.10em 0.15em gray;
+    
     font-family: Arial, Helvetica, sans-serif;
     
 }
-
 
 .imgFooter{
     width: 63%;  
