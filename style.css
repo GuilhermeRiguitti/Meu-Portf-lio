@@ -12,7 +12,7 @@
 }
 
 .link:hover{ 
-    transition: 0.1s;
+    transition: 0s;
     border-radius: 5px;
     padding: 1px;
     color: white;
